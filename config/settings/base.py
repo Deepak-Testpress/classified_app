@@ -9,6 +9,7 @@ environ.Env.read_env()
 SECRET_KEY = env("SECRET_KEY")
 
 INSTALLED_APPS = [
+    "classified_site.adspace.apps.AdspaceConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
