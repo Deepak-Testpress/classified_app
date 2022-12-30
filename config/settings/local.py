@@ -2,7 +2,7 @@ from config.env import env
 
 from .base import *
 
-DEBUG = env("LOCAL_DEBUG")
+DEBUG = env("DEBUG")
 
 DATABASES = {
     "default": {
