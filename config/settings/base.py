@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env("SECRET_KEY")
 
 INSTALLED_APPS = [
-    "classified_site.adspace.apps.AdspaceConfig",
+    "adspace.apps.AdspaceConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -41,6 +41,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
