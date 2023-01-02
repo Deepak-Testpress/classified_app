@@ -6,6 +6,9 @@ from .post import Post
 
 
 class Like(TimeStampedModel):
-    pass
-    liked_by = models.ManyToManyField(User, related_name="liked_by")
-    liked_post = models.ManyToManyField(Post, related_name="liked_posts")
+    liked_by = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="liked_by"
+    )
+    liked_post = models.ForeignKey(
+        Post, on_delete=models.CASCADE, related_name="liked_posts"
+    )
